@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="46.0" layoutY="57.0" text="prénom: " />
+      <Label layoutX="46.0" layoutY="85.0" prefHeight="17.0" prefWidth="65.0" text="nom:" />
+      <Label layoutX="46.0" layoutY="112.0" text="mail:" />
+      <TextField layoutX="111.0" layoutY="40.0" prefHeight="26.0" prefWidth="107.0" />
+      <TextField centerShape="false" layoutX="107.0" layoutY="72.0" prefHeight="26.0" prefWidth="116.0" />
+      <TextField layoutX="111.0" layoutY="99.0" prefHeight="26.0" prefWidth="107.0" />
+      <TableView layoutX="63.0" layoutY="200.0" prefHeight="165.0" prefWidth="509.0">
+         <columns>
+            <TableColumn prefWidth="171.0" text="prénom " />
+            <TableColumn prefWidth="152.0" text="nom " />
+            <TableColumn prefWidth="185.0" text="mail " />
+         </columns>
+      </TableView>
+      <HBox layoutX="47.0" layoutY="405.0" prefHeight="100.0" prefWidth="542.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" text="supprimer " />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="85.0" text="importer " />
+            <Button layoutX="66.0" layoutY="10.0" mnemonicParsing="false" text="exporter " />
+            <Button contentDisplay="RIGHT" layoutX="122.0" layoutY="10.0" mnemonicParsing="false" text="quitter" textAlignment="RIGHT" />
+         </children>
+      </HBox>
+   </children>
+</Pane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane fx:id="TableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddBookControlor">
+   <children>
+      <Label layoutX="59.0" layoutY="69.0" text="prénom" />
+      <Label layoutX="67.0" layoutY="95.0" text="nom" />
+      <Label layoutX="62.0" layoutY="120.0" prefHeight="17.0" prefWidth="42.0" text="mail" />
+      <TextField fx:id="tfLastName" layoutX="113.0" layoutY="65.0" />
+      <TextField fx:id="tfFirstName" layoutX="113.0" layoutY="91.0" />
+      <TextField fx:id="tfEmail" layoutX="113.0" layoutY="116.0" />
+      <Button fx:id="addBtn" layoutX="218.0" layoutY="169.0" mnemonicParsing="false" text="ajouter table " />
+      <TableView fx:id="table" layoutX="91.0" layoutY="205.0" prefHeight="200.0" prefWidth="387.0">
+        <columns>
+          <TableColumn fx:id="lastNameCol" prefWidth="113.0" text="prénom" />
+            <TableColumn fx:id="firstNameCol" prefWidth="159.0" text="nom " />
+            <TableColumn fx:id="emailCol" minWidth="7.0" prefWidth="114.0" text="mail " />
+        </columns>
+      </TableView>
+      <HBox layoutX="92.0" layoutY="433.0" prefHeight="100.0" prefWidth="450.0" spacing="50.0">
+         <children>
+            <Button fx:id="removeBtn" mnemonicParsing="false" text="supprimer" />
+            <Button fx:id="importBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="importer" />
+            <Button fx:id="exportBtn" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" text="exporter" />
+            <Button fx:id="quitBtn" layoutX="114.0" layoutY="10.0" mnemonicParsing="false" text="quitter " />
+         </children>
+      </HBox>
+   </children>
+</Pane>
